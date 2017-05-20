@@ -32,15 +32,8 @@ namespace Lab1
             TextViewDev.Text = "Insertar Nombre";
             string myDevice = Android.Provider.Settings.Secure.GetString(ContentResolver, Android.Provider.Settings.Secure.AndroidId);
             XamarinDiplomado.ServiceHelper helper = new XamarinDiplomado.ServiceHelper();
-            try
-            {
-                await helper.InsertarEntidad("lruval@outlook.com", "lab1", myDevice);
-            }
-            catch (Exception ex)
-            {
-                button.Text = "Gracias por completar el Lab1";
-                //throw;
-            }
+            
+            await helper.InsertarEntidad("jeisontriananr14@hotmail.com", "lab1", myDevice);
             
             button.Text = "Gracias por completar el Lab1";            
         }
